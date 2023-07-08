@@ -1,13 +1,27 @@
 const WeatherInfo = (weatherData) => {
-  let currentIcon = weatherData.current.condition.icon;
-  let currentDesc = weatherData.current.condition.text;
-  let currentTempCel = weatherData.current.temp_c + '°C';
-  let currentTempFar = weatherData.current.temp_f + '°F';
-  const getCurrentIcon = () => currentIcon;
-  const getCurrentDesc = () => currentDesc;
-  const getCurrentTempCel = () => currentTempCel;
-  const getCurrentTempFar = () => currentTempFar;
-  return { getCurrentIcon, getCurrentDesc, getCurrentTempCel, getCurrentTempFar };
+  let location = `${weatherData.location.name}, ${weatherData.location.country}`;
+  let icon = weatherData.current.condition.icon;
+  let desc = weatherData.current.condition.text;
+  let tempCel = weatherData.current.temp_c + ' °C';
+  let tempFar = weatherData.current.temp_f + ' °F';
+  let feelCel = weatherData.current.feelslike_c + ' °C';
+  let feelFar = weatherData.current.feelslike_f + ' °F';
+  let windKph = weatherData.current.wind_kph + ' KPH';
+  let windMph = weatherData.current.wind_mph + ' MPH';
+  let humidity = weatherData.current.humidity + ' %';
+
+  const getLocation = () => location;
+  const getIcon = () => icon;
+  const getDesc = () => desc;
+  const getTempCel = () => tempCel;
+  const getTempFar = () => tempFar;
+  const getFeelCel = () => feelCel;
+  const getFeelFar = () => feelFar;
+  const getWindKph = () => windKph;
+  const getWindMph = () => windMph;
+  const getHumidity = () => humidity;
+
+  return { getLocation, getIcon, getDesc, getTempCel, getTempFar, getFeelCel, getFeelFar, getWindKph, getWindMph, getHumidity };
 };
 
 export { WeatherInfo }

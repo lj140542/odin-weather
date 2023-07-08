@@ -18,6 +18,7 @@ const Controller = (() => {
     fetch(APIUrl + `current.json?key=${APIKey}&q=${location}`, { mode: 'cors' })
       .then(response => { return response.json() })
       .then(response => {
+        console.log(response);
         Display.clearWeatherInfo();
         if (response.error == null) { Display.displayWeatherInfo(WeatherInfo(response)); }
         else { return Promise.reject(response.error.message) }
