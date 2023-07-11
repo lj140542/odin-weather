@@ -2,10 +2,10 @@ const WeatherInfo = (weatherData) => {
   let location = `${weatherData.location.name}, ${weatherData.location.country}`;
   let icon = weatherData.current.condition.icon;
   let desc = weatherData.current.condition.text;
-  let tempCel = weatherData.current.temp_c + ' °C';
-  let tempFar = weatherData.current.temp_f + ' °F';
-  let feelCel = weatherData.current.feelslike_c + ' °C';
-  let feelFar = weatherData.current.feelslike_f + ' °F';
+  let tempCel = weatherData.current.temp_c;
+  let tempFar = weatherData.current.temp_f;
+  let feelCel = weatherData.current.feelslike_c;
+  let feelFar = weatherData.current.feelslike_f;
   let windKph = weatherData.current.wind_kph + ' km/h';
   let windMph = weatherData.current.wind_mph + ' mph';
   let humidity = weatherData.current.humidity + ' %';
