@@ -6,8 +6,8 @@ const WeatherInfo = (weatherData) => {
   let tempFar = weatherData.current.temp_f + ' °F';
   let feelCel = weatherData.current.feelslike_c + ' °C';
   let feelFar = weatherData.current.feelslike_f + ' °F';
-  let windKph = weatherData.current.wind_kph + ' KPH';
-  let windMph = weatherData.current.wind_mph + ' MPH';
+  let windKph = weatherData.current.wind_kph + ' km/h';
+  let windMph = weatherData.current.wind_mph + ' mph';
   let humidity = weatherData.current.humidity + ' %';
 
   const getLocation = () => location;
