@@ -150,3 +150,57 @@ a {
   text-decoration: none;
   color: #ffffff;
 }
+
+@media (width <=570px) {
+
+  /*
+
+    HEADER
+
+  */
+  header {
+    flex-direction: column;
+    gap: 4dvh;
+    padding-left: 30px;
+  }
+
+  /*
+
+    FORM
+
+  */
+
+  form {
+    width: 100%;
+  }
+
+  #form-location {
+    width: 100%;
+  }
+
+  /*
+
+    WEATHER DISPLAY
+
+  */
+
+  #current-weather-display {
+    width: 100%;
+    padding: 0;
+  }
+
+  #display-location {
+    padding-left: 20px;
+  }
+
+  #current-weather-data {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-self: center;
+  }
+
+  .current-weather-data-container:not(:nth-of-type(1)) {
+    border-left: none;
+    border-top: solid 2px rgba(238, 238, 238, 30%);
+  }
+}
