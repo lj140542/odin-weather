@@ -78,7 +78,7 @@ form {
 #current-weather-display {
   display: flex;
   flex-direction: column;
-  margin-top: 20dvh;
+  justify-content: center;
   align-items: flex-start;
   padding-left: 5dvw;
   gap: 2rem;
@@ -111,9 +111,9 @@ form {
   align-items: flex-start;
 }
 
-#current-weather-icon {
+/* #current-weather-icon {
   width: 5dvw;
-}
+} */
 
 .temp-container {
   display: flex;
@@ -136,4 +136,17 @@ form {
 #current-weather-wind,
 #current-weather-humidity {
   font-size: 1rem;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  color: #eeeeee;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
 }
